@@ -1,0 +1,8 @@
+- name: my dev setup
+  hosts: all
+  tasks:
+    - name: execute test command on remote system
+      command: id
+    - name: print result
+      debug: var=id.stdout
+
